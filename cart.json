@@ -1,50 +1,65 @@
 {
     "12345": {
         "name": "Tram",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/tram.png"
+        "image":  "./img/discount/tram.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12346": {
         "name": "Duck",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/duck.png"
+        "image":  "./img/discount/duck.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12347": {
         "name": "Car",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/car.png"
+        "image":  "./img/discount/car.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12348": {
         "name": "Captain",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/captain.png"
+        "image":  "./img/discount/captain.png"
     },
     "12349": {
         "name": "Tram",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/tram.png"
+        "image":  "./img/discount/tram.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12350": {
         "name": "Duck",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/duck.png"
+        "image":  "./img/discount/duck.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12351": {
         "name": "Car",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/car.png"
+        "image":  "./img/discount/car.png",
+        "btnImg": "./img/discount/supermarket.png"
     },
     "12352": {
         "name": "Captain",
-        "oast": 170,
+        "coast": 170,
+        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "/img/discount/captain.png"
+        "image":  "./img/discount/captain.png",
+        "btnImg": "./img/discount/supermarket.png"
     }
 }
