@@ -1,0 +1,256 @@
+@media(max-width: 991px)
+    // header
+    .header
+        .container
+            flex-direction: column
+        &_logo
+            margin-bottom: 30px
+        &_search
+            width: 100%
+            justify-content: center
+            &__btn
+                font-size: 14px
+            &__input
+                width: 50%
+    // main
+    .main
+        .container
+            flex-direction: row
+    // promotio
+    .promotio
+        .container
+        &_block
+            flex-direction: column
+            &__big
+                margin-bottom: 30px
+                width: 100%
+            &__small
+                &___barbie
+                    margin-bottom: 30px
+                    background-position: 550px 20px
+                    &_car
+                        background-position: 550px 70px
+        &_info
+            flex-wrap: wrap
+            margin-top: 20px
+            justify-content: start
+            &__block
+                width: 50%
+                padding-right: 40px
+                border-right: none
+                margin-bottom: 20px
+    // aboutUs
+    .aboutUs
+        &_promotion
+            flex-direction: column
+            margin-top: 100px
+            font-size: 20px
+            font-weight: bold
+            &__robots
+                width: 100%
+                justify-content: center
+                margin-bottom: 100px
+                &::after
+                    display: none
+            &__piramid
+                width: 100%
+                justify-content: center
+                &::after
+                    display: none
+        &_text
+            flex-direction: column
+            &__img
+                margin-bottom: 40px
+    // popular
+    .popular
+        .container
+        &_title
+            &_a
+                flex: 0.6
+            &_b
+                flex: 0.4
+        &_content
+            &__block
+                &___item
+                    margin-bottom: 13px
+                    min-width: 280px
+                    &:last-child
+                        margin-bottom: 0
+        .slick-slider
+            width: 560px
+            .slick-prev
+                right: 55%
+            .slick-next
+                right: 50%
+    // location
+    .location
+        .container
+            align-items: center
+            flex-direction: column
+        &_wrap
+            margin-top: 30px
+            display: flex
+            justify-content: space-between
+            width: 100%
+        &_content
+            &__logo
+                margin-right: 0
+
+
+                
+
+
+@media(max-width: 576px)
+    // promotio
+    .promotio
+        &_block
+            &__big
+                background-position: 0 0
+                &___text
+                    font-size: 30px
+        &_info
+            &__block
+                width: 100%
+    // discount
+    .discount
+        .container
+        &_title
+            margin-top: 30px
+            padding: 0
+            font-size: 30px
+            text-align: center
+        &_slider
+            position: relative
+            &__item
+                padding-top: 10px
+                margin-right: 0
+                &___img
+                    margin-bottom: 10px
+                &___name
+                    font-size: 15px
+            .slick-arrow
+                top: -17%
+            .slick-prev
+                left: 0
+            .slick-next
+                right: 0
+            .slick-dots
+                margin-top: 10px
+    // aboutUs
+    .aboutUs
+        &_promotion
+            margin-top: 50px
+            font-size: 14px
+            &__robots
+                margin-bottom: 30px
+        &_text
+            &__info
+                &___title
+                    font-size: 30px
+    // popular
+    .popular
+        .container
+            position: inherit
+        &_title
+            font-size: 30px
+            &_b
+                display: none
+        &_content
+            position: relative
+            flex: 1
+            flex-direction: column
+            width: 100%
+            &_review
+                display: block
+                position: absolute
+                bottom: 480px
+                left: 50%
+                text-transform: uppercase
+                font-size: 30px
+                font-weight: bold
+                transform: translateX(-50%)
+            &__block
+                justify-content: center
+                width: 100%
+                margin-right: 0
+            &__slider
+                position: relative
+                margin-top: 100px
+                &_view
+                    top: -15%
+                    display: block
+                    position: absolute
+                    background-color: green
+                    height: 50px
+                    z-index: -50
+            .slick-slider
+                z-index: 29
+                width: 100%
+                .slick-arrow
+                    top: -15%
+                .slick-prev
+                    left: 0
+                .slick-next
+                    right: 0
+    // location
+    .location
+        &_wrap
+            width: 80%
+            flex-direction: column
+        &_content
+            &__block
+                margin-top: 40px
+                
+
+
+@media(max-width: 365px)
+    // header
+    .header
+        &_search
+            &__btn
+                font-size: 10px
+    // promotio
+    .promotio
+        &_block
+            flex-direction: column
+            &__big
+                padding: 30px 20px
+                align-items: center
+                &___text
+                    margin-top: 20px
+                    font-size: 22px
+                &___price
+                    align-items: center
+                    &_b
+                        margin: 0
+            &__small
+                &___barbie
+                    padding: 20px 0
+                    align-items: center
+    // aboutUs
+    .aboutUs
+        &_text
+            &__info
+                &___title
+                    font-size: 30px
+                &___text
+                    font-size: 14px
+    // popular
+    .popular
+        &_content
+            &_review
+                bottom: 595px
+    // location
+    .location
+        &_content
+            &__block
+                &___text
+                    &_a
+                        font-size: 12px
+                    &_b
+                        font-size: 14px
+                    &_tel
+                        font-size: 14px
+                    &_link
+                        font-size: 12px
+                

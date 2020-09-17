@@ -1,0 +1,22 @@
+body
+    background-color: $body_color
+.container
+    display: flex
+    padding-left: 20px
+    padding-right: 20px
+    max-width: 1220px
+
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 30px
+    border: 2px solid $btn_color
+    transition: all 0.3s
+    &:hover
+        color: $light_color
+        background-color: darken($btn_color, 5%)
+        border: 2px solid darken($btn_color, 5%)
+    &:active
+        background-color: darken($btn_color, 10%)
+        border: 2px solid darken($btn_color, 10%)

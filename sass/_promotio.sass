@@ -1,0 +1,128 @@
+.promotio
+    margin-top: 40px
+    .container
+        display: flex
+        flex-direction: column
+    &_block
+        display: flex
+        flex: 1
+        justify-content: space-between
+        &__big
+            flex: 1.9
+            margin-right: 30px
+            padding-top: 60px
+            padding-bottom: 35px
+            padding-left: 16px
+            border-radius: 10px
+            background-color: #00aaff
+            background-image: url('../img/promotio/price_bg.png')
+            background-repeat: no-repeat
+            background-position: 30px center
+            width: 500px
+            &___price
+                display: flex
+                flex-direction: column
+                align-items: start
+                &_a
+                    padding: 0 20px
+                    border-radius: 45px
+                    background-color: $danger_color
+                    font-size: 55px
+                    font-weight: bold
+                    color: $light_color
+                &_b
+                    position: relative
+                    margin-top: 15px
+                    margin-left: 20px
+                    font-size: 50px
+                    font-weight: bold
+                    color: $light_color
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 5px
+                        left: 0
+                        top: 50%
+                        transform: translateY(-50%)
+                        border-radius: 3px
+                        background-color: $danger_color
+            &___text
+                margin-top: 90px
+                display: flex
+                flex-direction: column
+                align-items: start
+                font-size: 55px
+                font-weight: bold
+                color: $light_color
+                &_a
+                    padding: 0 20px
+                    border-radius: 50px
+                    background-color: $btn_color
+                &_b
+                    margin-top: 10px
+                    padding: 0 20px
+                    border-radius: 50px
+                    background-color: $btn_color
+        &__small
+            display: flex
+            flex: 1
+            flex-direction: column
+            justify-content: space-between
+            &___barbie
+                display: flex
+                flex-direction: column
+                padding-top: 69px
+                padding-bottom: 60px
+                padding-left: 38px
+                border-radius: 10px
+                background-color: $barbie_color
+                background-image: url('../img/promotio/barbie.png')
+                background-repeat: no-repeat
+                background-size: 135px
+                background-position: 230px 20px
+                span
+                    font-size: 26px
+                    font-weight: bold
+                    color: $light_color
+                &_car
+                    background-color: $btn_color
+                    background-image: url('../img/promotio/car.png')
+                    background-size: 260px
+                    background-position: 200px 90px
+            a
+                margin-top: 24px
+                font-size: 14px
+                text-decoration: underline
+                color: $light_color
+                transition: all 0.3s
+                &:hover
+                    color: $main_color
+    &_info
+        display: flex
+        margin-top: 40px
+        padding: 25px
+        border-radius: 10px
+        justify-content: space-between
+        background-color: $light_color
+        &__block
+            display: flex
+            align-items: center
+            padding-right: 45px
+            border-right: 1px solid #e9e9e9
+            &:last-child
+                border-right: none
+            &___img
+                display: flex
+                justify-content: flex-end
+                margin-right: 10px
+                width: 43px
+            &___text                
+                span
+                    display: block
+                    font-size: 12px
+                    color: $info_color
+                    &:last-child
+                        font-size: 10px
+                        color: $infoLight_color
+

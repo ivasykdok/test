@@ -1,0 +1,45 @@
+.location
+    margin-top: 100px
+    .container
+        display: flex
+        justify-content: space-between
+    &_wrap
+        display: flex
+        justify-content: space-between
+        width: 100%
+    &_content
+        padding: 30px 0
+        &__logo
+            margin-right: 40px
+        &__block
+            display: flex
+            align-items: center
+            &___img
+                margin-right: 9px
+                display: flex
+                align-items: center
+                justify-content: center
+                min-width: 40px
+                min-height: 40px
+                border-radius: 50%
+                background-color: $cart_color
+            &___text
+                &_a
+                    color: #818181
+                    font-size: 14px
+                &_b
+                    font-size: 18px
+                    color: $info_color
+                    a
+                        color: $info_color
+                &_tel
+                    font-size: 18px
+                &_link
+                    font-size: 14px
+                    a
+                        text-decoration: underline
+                        color: $danger_color
+                        transition: all 0.3s
+                        &:hover
+                            color: $main_color
+

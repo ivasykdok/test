@@ -1,0 +1,40 @@
+.main
+    background-color: $main_color
+    .container
+        flex-direction: row-reverse
+    &_navbar
+        padding: 0
+        &__cart
+            display: flex
+            align-items: center
+            &___img
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 10px
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                background-color: $cart_color
+            &___text
+                font-size: 16px
+        &__burger
+            border: none
+        &__item
+            display: flex
+            align-items: center
+            padding-left: 30px
+            padding-right: 30px
+            height: 58px
+            transition: all 0.3s
+            &:hover
+                background-color: $btn_color
+                cursor: pointer
+            &:active
+                background-color: darken($btn_color, 5%) 
+            &___link
+                color: $light_color
+                &:hover
+                    text-decoration: none
+                    color: $light_color
+

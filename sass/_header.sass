@@ -1,0 +1,53 @@
+.header
+    .container
+        align-items: center
+        justify-content: space-between
+        padding-top: 30px
+        padding-bottom: 30px
+    &_logo
+        img
+            width: 291px
+    &_search
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        margin-bottom: 0
+        &__btn
+            border-radius: 0
+            border-top-left-radius: 20px
+            border-bottom-left-radius: 20px
+            border: 1px solid $btn_color
+            font-size: 16px
+            color: $light_color
+            background-color: $btn_color
+            transition: all 0.3s
+            &:hover
+                background-color: darken($btn_color, 5%)
+                border: 1px solid darken($btn_color, 5%)
+                color: $light_color
+            &:active
+                background-color: darken($btn_color, 5%)
+                border: 1px solid darken($btn_color, 5%)
+                color: $light_color
+
+            &_n
+                display: flex
+                justify-content: start
+                align-items: center
+                height: calc(1.5em + .75rem + 2px)
+                // width: 40px
+                border-top-right-radius: 20px
+                border-bottom-right-radius: 20px
+                background-color: $light_color
+                border: none
+                img
+                    width: 19px
+        &__input
+            width: 400px
+            border-radius: 0
+            border: 1px solid $light_color
+
+            
+
+        
+            

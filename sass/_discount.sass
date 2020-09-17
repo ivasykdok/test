@@ -1,0 +1,116 @@
+.discount
+    .container
+        position: relative
+        flex-direction: column
+        .slick-list
+            overflow: hidden
+        .slick-track
+            display: flex
+    &_title
+        margin-top: 100px
+        font-size: 50px
+        font-weight: bold
+    &_slider
+        display: flex
+        flex-direction: column
+        margin-top: 40px
+        min-width: 0
+        &__item
+            padding: 55px 15px 35px
+            margin-right: 5px
+            display: flex
+            flex-direction: column
+            border-radius: 10px
+            border: 1px solid #e9e9e9
+            background-color: $light_color
+            &:last-child
+                margin-right: 0
+            &___img
+                display: flex
+                align-items: center
+                justify-content: center
+                min-height: 200px
+                margin-bottom: 60px
+                img
+                    max-width: 100%
+            &___name
+                margin-bottom: 20px
+                font-size: 18px
+                color: $info_color
+            &___price
+                display: flex
+                align-items: center
+                &_a
+                    padding: 0 10px
+                    margin-right: 10px
+                    font-size: 36px
+                    font-weight: bold
+                    color: $light_color
+                    border-radius: 30px
+                    background-color: $danger_color
+                &_b
+                    position: relative
+                    font-size: 30px
+                    font-weight: bold
+                    &::before
+                        content: ''
+                        position: absolute
+                        width: 100%
+                        height: 3px
+                        top: 50%
+                        border-radius: 3px
+                        transform: translateY(-50%)
+                        background-color: $danger_color
+            &___btn
+                margin-top: 20px
+                img
+                    margin-right: 8px
+        .slick-arrow
+            position: absolute
+            top: 120px
+            height: 40px
+            width: 40px
+            z-index: 10
+            font-size: 0
+            border-radius: 20px
+            border: 2px solid $cart_color
+            background-color: $light_color
+            transition: all 0.3s
+            &:hover
+                background-color: $cart_color
+        .slick-prev
+            right: 70px
+            background-image: url('../img/discount/arrow.png')
+            background-repeat: no-repeat
+            background-position: center center
+            &:hover
+                background-image: url('../img/discount/arrow_light.png')
+        .slick-next
+            right: 20px
+            background-image: url('../img/discount/arrow.png')
+            background-repeat: no-repeat
+            background-position: center center
+            transform: rotate(180deg)
+            &:hover
+                background-image: url('../img/discount/arrow_light.png')
+        .slick-dots
+            display: flex
+            justify-content: center
+            padding: 0
+            font-size: 0
+            margin-top: 40px
+            li
+                margin: 0 3px
+                list-style: none
+                button
+                    width: 16px
+                    height: 16px
+                    border: 1px solid $cart_color
+                    border-radius: 8px
+                    background-color: $light_color
+            .slick-active
+                button
+                    background-color: $cart_color
+            .slider__item
+                width: 100%
+

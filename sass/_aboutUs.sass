@@ -1,0 +1,90 @@
+.aboutUs
+    .container
+        flex-direction: column
+    &_promotion
+        display: flex
+        flex: 1
+        margin-top: 150px
+        justify-content: space-between
+        font-size: 28px
+        text-transform: uppercase
+        color: $light_color
+        &__link
+            position: absolute
+            width: 22px
+            height: 22px
+            bottom: 15px
+            right: 15px
+            border-radius: 11px
+            background-color: $light_color
+            background-image: url('../img/aboutUs/next.png')
+            background-repeat: no-repeat
+            background-position: center center
+        &__robots
+            display: flex
+            position: relative
+            flex: 1.6
+            justify-content: flex-end
+            padding: 57px 43px
+            margin-right: 20px
+            border-radius: 10px
+            background-color: $barbie_color
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                width: 226px
+                height: 255px
+                bottom: 0
+                left: -20px
+                background-image: url('../img/aboutUs/robot.png')
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: 0 0
+            span
+                max-width: 55%
+        &__piramid
+            display: flex
+            position: relative
+            flex: 2
+            padding: 57px 43px
+            border-radius: 10px
+            justify-content: flex-end
+            color: $light_color
+            background-color: $main_color
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                width: 226px
+                height: 295px
+                bottom: 0
+                left: -20px
+                background-image: url('../img/aboutUs/piramid.png')
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: 0 0
+            span
+                max-width: 75%
+    &_text
+        display: flex
+        align-items: center
+        margin-top: 100px
+        &__img
+            flex: 1
+            margin-right: 25px
+            img
+                max-width: 100%
+        &__info
+            flex: 1
+            &___title
+                margin-bottom: 30px
+                font-size: 50px
+                font-weight: bold
+                text-transform: uppercase
+            &___text
+                font-size: 16px
+            &___link
+                text-decoration: underline
+                transition: all 0.3s
+                color: $cart_color
