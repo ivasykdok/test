@@ -2,64 +2,65 @@
     "12345": {
         "name": "Tram",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/tram.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12346": {
         "name": "Duck",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/duck.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12347": {
         "name": "Car",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/car.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12348": {
         "name": "Captain",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
-        "image":  "./img/discount/captain.png"
+        "image":  "./img/discount/captain.png",
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12349": {
         "name": "Tram",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/tram.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12350": {
         "name": "Duck",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/duck.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12351": {
         "name": "Car",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/car.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     },
     "12352": {
         "name": "Captain",
         "coast": 170,
-        "coast_b": 230,
         "description": "Bruder MAN TGA garbage truck (orange)",
         "image":  "./img/discount/captain.png",
-        "btnImg": "./img/discount/supermarket.png"
+        "btnImg": "./img/discount/supermarket.png",
+        "coast_b": 230
     }
 }

@@ -1,5 +1,10 @@
+'use strict';
+let cart = {}; // my cart
+
 $('document').ready(function () {
   loadCart();
+  checkCart();
+  showMinCart();
 });
 
 function loadCart() {
@@ -7,37 +12,65 @@ function loadCart() {
   $.getJSON('cart.json', function (data) {
     // console.log(data);
     let out = '';
-    for(let key in data) {
+    for (let key in data) {
+      // insert item
       out += '<div class="discount_slider__item">';
+
       //insert image
       out += '<div class="discount_slider__item___img">';
-        out += '<img src="'+data[key].image+'" alt="'+data[key].name+'">';
+      out += '<img src=" ' + data[key].image + ' " alt=" ' + data[key].name + ' ">';
       out += '</div>';
-      //end image
 
       //insert description
       out += '<div class="discount_slider__item___name">';
-        out += '<span>' + data[key].description + '</span>';
+      out += '<span>' + data[key].description + '</span>';
       out += '</div>';
-      //end description
 
       //insert price
       out += '<div class="discount_slider__item___price">';
-        out += '<span class="discount_slider__item___price_a">' + '$' + data[key].coast  + '</span>';
-        out += '<span class="discount_slider__item___price_b">' + '$' + data[key].coast_b  + '</span>';
+      out += '<span class="discount_slider__item___price_a">' + '$' + data[key].coast + '</span>';
+      out += '<span class="discount_slider__item___price_b">' + '$' + data[key].coast_b + '</span>';
       out += '</div>';
-      //end price
 
-      //btn
-      out += '<button class="btn discount_slider__item___btn">';
-        out += '<img src="'+ data[key].btnImg+'" alt="Supermarket">';
-        out += '<span>Add Tod Cart</span>'
+      // insert btn
+      out += '<button class="btn discount_slider__item___btn" data-id="' + key + '">';
+      out += '<i class="btn_i"></i>Add Tod Cart';
       out += '</button>';
-      //end btn
 
       out += '</div>';
-
     }
-    $('.discount_slider').html(out);
+    $('.discount_slider').slick('slickAdd', out);
+    $('button.discount_slider__item___btn').on('click', addToCart);
   });
+}
+
+function addToCart(event) {
+  // insert in cart
+  if (event.target.classList.contains('btn') || event.target.classList.contains('btn_i')) {
+    let articul = event.target.dataset.id;
+    if (cart[articul] != undefined) {
+      cart[articul]++;
+    } else {
+      cart[articul] = 1;
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    // console.log(cart);
+    showMinCart();
+  }
+}
+
+function checkCart() {
+  // check the basket in localstorage
+  if (localStorage.getItem('cart') != null) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+  }
+}
+
+function showMinCart() {
+  // show cart contents
+  let out = '';
+  for (let key in cart) {
+    out += key + ' --- ' + cart[key] + '<br>';
+  }
+  $('.main_navbar__cart___text___subtitle').html(out);
 }
