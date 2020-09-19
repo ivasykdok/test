@@ -172,7 +172,7 @@ body {
 .header_search__input {
   width: 400px;
   border-radius: 0;
-  border: 1px solid #ffffff;
+  border: none;
 }
 
 .main {
