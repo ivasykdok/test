@@ -1195,7 +1195,6 @@ body {
   }
   .popular_content_review {
     display: block;
-    position: absolute;
     bottom: 480px;
     left: 50%;
     text-transform: uppercase;
@@ -1274,6 +1273,7 @@ body {
     font-size: 14px;
   }
   .popular_content_review {
+    position: absolute;
     bottom: 595px;
   }
   .location_content__block___text_a {
