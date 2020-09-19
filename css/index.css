@@ -17,6 +17,7 @@ body {
   border-radius: 30px;
   border: 2px solid #00ca00;
   transition: all 0.3s;
+  font-size: 13px;
 }
 
 .btn_i {
@@ -778,7 +779,6 @@ body {
 .popular_content__block___item___text {
   display: flex;
   flex-direction: column;
-  background-color: red;
 }
 
 .popular_content__block___item___text_name {
