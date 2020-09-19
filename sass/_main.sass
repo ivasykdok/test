@@ -16,6 +16,10 @@
                 height: 40px
                 border-radius: 50%
                 background-color: $cart_color
+                border: none
+                transition: all 0.3s
+                &:hover
+                    background-color: darken($cart_color, 5%)
             &___text
                 font-size: 16px
         &__burger
@@ -31,10 +35,9 @@
                 background-color: $btn_color
                 cursor: pointer
             &:active
-                background-color: darken($btn_color, 5%) 
+                background-color: darken($btn_color, 5%)
             &___link
                 color: $light_color
                 &:hover
                     text-decoration: none
                     color: $light_color
-

@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toys n Motion</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+          </div>
+          <div class="modal-body" id="modalCart"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal -->
+
     <header class="header">
       <div class="container">
         <div class="header_logo">
@@ -65,7 +81,8 @@
           <!-- /.main_navbar__burger -->
           <div class="navbar-brand" href="#">
             <div class="main_navbar__cart">
-              <div class="main_navbar__cart___img">
+              <div  data-toggle="modal" data-target="#exampleModal">
+                <button class="main_navbar__cart___img">
                 <img src="./img/main/cart.png" alt="Cart" />
               </div>
               <!-- /.main_navbar__cart___img -->
@@ -73,8 +90,8 @@
                 <div class="main_navbar__cart___text___title">My Cart</div>
                 <!-- /.main_navbar__cart___text___title -->
                 <div class="main_navbar__cart___text___subtitle">
-                  <span class="main_navbar__cart___text___subtitle_length">(3)</span>
-                  <span class="main_navbar__cart___text___subtitle_total">$ 200</span>
+                  <span class="main_navbar__cart___text___subtitle_length" id="sum"></span>
+                  <span class="main_navbar__cart___text___subtitle_total"></span>
                 </div>
                 <!-- /.main_navbar__cart___text___subtitle -->
               </div>
@@ -203,9 +220,7 @@
     <div class="discount">
       <div class="container">
         <div class="discount_title">DISCOUNTS</div>
-        <div class="discount_slider">
-
-        </div>
+        <div class="discount_slider"></div>
         <!-- /.discount_slider -->
       </div>
       <!-- /.container -->
@@ -275,99 +290,11 @@
         <!-- /.popular_title -->
         <div class="popular_content">
           <div class="popular_content__block">
-            <div class="popular_content__block___item">
-              <div class="popular_content__block___item____img">
-                <img src="./img/popular/robots.png" alt="Robots" />
-              </div>
-              <!-- /.popular_content__block___item____img -->
-              <div class="popular_content__block___item___text">
-                <div class="popular_content__block___item___text_name">
-                  Bruder MAN TAG garbage<br />
-                  truck (orange)
-                </div>
-                <!-- /.popular_content__block___item___text_name -->
-                <div class="popular_content__block___item___text_price">$ 230</div>
-                <!-- /.popular_content__block___item___text_price -->
-                <button class="popular_content__block___item___text_btn btn">
-                  <img src="./img/popular/supermarket.png" alt="" />
-                  <span>Add to Cart</span>
-                </button>
-                <!-- /.popular_content__block___item___text_btn btn -->
-              </div>
-              <!-- /.popular_content__block___item___text -->
-            </div>
-            <!-- /.popular_content__block___item -->
-            <div class="popular_content__block___item">
-              <div class="popular_content__block___item____img">
-                <img src="./img/popular/train.png" alt="Train" />
-              </div>
-              <!-- /.popular_content__block___item____img -->
-              <div class="popular_content__block___item___text">
-                <div class="popular_content__block___item___text_name">
-                  Bruder MAN TAG garbage<br />
-                  truck (orange)
-                </div>
-                <!-- /.popular_content__block___item___text_name -->
-                <div class="popular_content__block___item___text_price">$ 230</div>
-                <!-- /.popular_content__block___item___text_price -->
-                <button class="popular_content__block___item___text_btn btn">
-                  <img src="./img/popular/supermarket.png" alt="" />
-                  <span>Add to Cart</span>
-                </button>
-                <!-- /.popular_content__block___item___text_btn btn -->
-              </div>
-              <!-- /.popular_content__block___item___text -->
-            </div>
-            <!-- /.popular_content__block___item -->
-            <div class="popular_content__block___item">
-              <div class="popular_content__block___item____img">
-                <img src="./img/popular/car.png" alt="Car" />
-              </div>
-              <!-- /.popular_content__block___item____img -->
-              <div class="popular_content__block___item___text">
-                <div class="popular_content__block___item___text_name">
-                  Bruder MAN TAG garbage<br />
-                  truck (orange)
-                </div>
-                <!-- /.popular_content__block___item___text_name -->
-                <div class="popular_content__block___item___text_price">$ 230</div>
-                <!-- /.popular_content__block___item___text_price -->
-                <button class="popular_content__block___item___text_btn btn">
-                  <img src="./img/popular/supermarket.png" alt="Supermarket" />
-                  <span>Add to Cart</span>
-                </button>
-                <!-- /.popular_content__block___item___text_btn btn -->
-              </div>
-              <!-- /.popular_content__block___item___text -->
-            </div>
-            <!-- /.popular_content__block___item -->
-            <div class="popular_content__block___item">
-              <div class="popular_content__block___item____img">
-                <img src="./img/popular/piano.png" alt="Piano" />
-              </div>
-              <!-- /.popular_content__block___item____img -->
-              <div class="popular_content__block___item___text">
-                <div class="popular_content__block___item___text_name">
-                  Bruder MAN TAG garbage<br />
-                  truck (orange)
-                </div>
-                <!-- /.popular_content__block___item___text_name -->
-                <div class="popular_content__block___item___text_price">$ 230</div>
-                <!-- /.popular_content__block___item___text_price -->
-                <button class="popular_content__block___item___text_btn btn">
-                  <img src="./img/popular/supermarket.png" alt="Supermarket" />
-                  <span>Add to Cart</span>
-                </button>
-                <!-- /.popular_content__block___item___text_btn btn -->
-              </div>
-              <!-- /.popular_content__block___item___text -->
-            </div>
-            <!-- /.popular_content__block___item -->
+            
+            
           </div>
           <!-- /.popular_content__block -->
-          <div class="popular_content_review">
-            review
-          </div>
+          <div class="popular_content_review">review</div>
           <!-- /.popular_content_review -->
           <div class="popular_content__slider">
             <div class="popular_content__slider___item">
@@ -452,22 +379,20 @@
       <div class="location_content">
         <div class="container">
           <div class="location_content__logo">
-            <img src="./img/header/logo.png" alt="Toys n Motion">
+            <img src="./img/header/logo.png" alt="Toys n Motion" />
           </div>
           <!-- /.location_content__logo -->
-          <wrap class='location_wrap'>
+          <wrap class="location_wrap">
             <div class="location_content__block">
               <div class="location_content__block___img">
-                <img src="./img/location/email.png" alt="Email">
+                <img src="./img/location/email.png" alt="Email" />
               </div>
               <!-- /.location_content__block___img -->
               <div class="location_content__block___text">
-                <div class="location_content__block___text_a">
-                  E-mail:
-                </div>
+                <div class="location_content__block___text_a">E-mail:</div>
                 <!-- /.location_content__block___text_a -->
                 <div class="location_content__block___text_b">
-                  <a href="mailto:Naderelfeky@yahoo.com">Naderelfeky@yahoo.com</a> 
+                  <a href="mailto:Naderelfeky@yahoo.com">Naderelfeky@yahoo.com</a>
                 </div>
                 <!-- /.location_content__block___text_b -->
               </div>
@@ -476,17 +401,13 @@
             <!-- /.location_content__block -->
             <div class="location_content__block">
               <div class="location_content__block___img">
-                <img src="./img/location/location.png" alt="Location">
+                <img src="./img/location/location.png" alt="Location" />
               </div>
               <!-- /.location_content__block___img -->
               <div class="location_content__block___text">
-                <div class="location_content__block___text_a">
-                  Our address:
-                </div>
+                <div class="location_content__block___text_a">Our address:</div>
                 <!-- /.location_content__block___text_a -->
-                <div class="location_content__block___text_b">
-                  462 Great Mall Dr, Milpitas, CA  95035
-                </div>
+                <div class="location_content__block___text_b">462 Great Mall Dr, Milpitas, CA 95035</div>
                 <!-- /.location_content__block___text_b -->
               </div>
               <!-- /.location_content__block___text -->
@@ -494,13 +415,11 @@
             <!-- /.location_content__block -->
             <div class="location_content__block">
               <div class="location_content__block___img">
-                <img src="./img/location/phone.png" alt="Phone">
+                <img src="./img/location/phone.png" alt="Phone" />
               </div>
               <!-- /.location_content__block___img -->
               <div class="location_content__block___text">
-                <div class="location_content__block___text_tel">
-                  1 408-791-6030
-                </div>
+                <div class="location_content__block___text_tel">1 408-791-6030</div>
                 <!-- /.location_content__block___text_tel -->
                 <div class="location_content__block___text_link">
                   <a href="tel:+3814087916030">Request a call</a>
@@ -520,22 +439,13 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="footer_text">
-          ©2020 Toys n Motion
-        </span>
-        <span class="footer_text">
-          Web Design by AIT, Inc
-        </span>
+        <span class="footer_text"> ©2020 Toys n Motion </span>
+        <span class="footer_text"> Web Design by AIT, Inc </span>
       </div>
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
 
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -545,6 +455,38 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/eshop.js"></script>
   </body>
 </html>
+
+<!-- 
+
+  <div class="popular_content__block___item">
+              <div class="popular_content__block___item____img">
+                <img src="./img/popular/robots.png" alt="Robots" />
+              </div>
+              /.popular_content__block___item____img
+              <div class="popular_content__block___item___text">
+                <div class="popular_content__block___item___text_name">
+                  Bruder MAN TAG garbage<br />
+                  truck (orange)
+                </div>
+                /.popular_content__block___item___text_name
+                <div class="popular_content__block___item___text_price">$ 230</div>
+                /.popular_content__block___item___text_price
+                <button class="popular_content__block___item___text_btn btn">
+                  <img src="./img/popular/supermarket.png" alt="" />
+                  <span>Add to Cart</span>
+                </button>
+                /.popular_content__block___item___text_btn btn
+              </div>
+              /.popular_content__block___item___text
+            </div>
+            /.popular_content__block___item
+
+
+
+
+
+-->
