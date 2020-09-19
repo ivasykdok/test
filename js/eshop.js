@@ -120,45 +120,6 @@ function showMinCart() {
       document.querySelector('.main_navbar__cart___text___subtitle_length').innerHTML = `(${sum})`;
     }
   });
-
-  // $.getJSON('popular.json', function (data) {
-  //   let popular = data; // all items in the cart
-  //   console.log(popular);
-  //   if ($.isEmptyObject(cart)) {
-  //     let out = 'Порожньо :(';
-  //     $('#modalCart').html(out);
-  //   } else {
-  //     let out = '';
-  //     for (let key in cart) {
-  //       out += '<div class="cart">';
-  //       out += '<button class="delete" data-id="' + key + '"></button>';
-  //       out += '<div class="cart_img">';
-  //       out += '<img src="' + popular[key].image + '" alt="' + popular[key].name + '"/>';
-  //       out += '</div>';
-  //       out += '<div class="cart_name">' + popular[key].name + '</div>';
-  //       out += '<button class="minus" data-id="' + key + '">-</button>';
-  //       out += '<div class="cart_number">' + cart[key] + '</div>';
-  //       out += '<button class="plus" data-id="' + key + '">+</button>';
-  //       out += '<div class="cart_total">';
-  //       out += '<div class="cart_total__currency">$</div>' + cart[key] * popular[key].coast + '</div>';
-  //       out += '</div>';
-  //     }
-  //     $('#modalCart').html(out);
-  //     $('.plus').on('click', plusGoods);
-  //     $('.minus').on('click', minusGoods);
-  //     $('.delete').on('click', deleteGoods);
-  //   }
-  //   for (let key in data) {
-  //     for (let el in cart) {
-  //       if (el === key) {
-  //         total += data[key].coast * cart[key];
-  //         sum += cart[key];
-  //       }
-  //     }
-  //     document.querySelector('.main_navbar__cart___text___subtitle_total').innerHTML = `$ ${total}`;
-  //     document.querySelector('.main_navbar__cart___text___subtitle_length').innerHTML = `(${sum})`;
-  //   }
-  // });
 }
 
 function plusGoods() {
