@@ -767,7 +767,7 @@ body {
 }
 
 .popular_content__block___item____img {
-  margin-right: 10px;
+  margin-right: 5px;
   width: 125px;
 }
 
@@ -778,10 +778,11 @@ body {
 .popular_content__block___item___text {
   display: flex;
   flex-direction: column;
+  background-color: red;
 }
 
 .popular_content__block___item___text_name {
-  max-width: 210px;
+  max-width: 205px;
   font-size: 17px;
   line-height: 1;
   color: #2b2b2b;
